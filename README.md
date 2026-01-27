@@ -6,11 +6,12 @@ This project focuses on real-time collaboration, rich text editing, and a clean,
 
 ## Landing page
 
-![Screenshot 1]()
+<img width="2553" height="1289" alt="landing page" src="https://github.com/user-attachments/assets/86b3f23e-a188-4c33-8cdc-921252a90df8" />
 
 ## Editor
 
-![Screenshot 2]()
+<img width="2547" height="1302" alt="document page" src="https://github.com/user-attachments/assets/25cd63cf-afec-4f3e-8cf8-de915f177ba9" />
+
 
 ## Features
 
