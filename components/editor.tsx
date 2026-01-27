@@ -6,6 +6,7 @@ import { BlockNoteView } from "@blocknote/mantine";
 import "@blocknote/mantine/style.css";
 import { useTheme } from "next-themes";
 import { useEdgeStore } from "@/lib/edgestore";
+import { useEffect } from "react";
 
 interface EditorProps {
   onChange: (value: string) => void;
@@ -31,6 +32,10 @@ const Editor = ({ onChange, initialContent, editable = true }: EditorProps) => {
       : undefined,
     uploadFile: handleUpload,
   });
+
+  useEffect(() => {
+    editor.isEditable = editable;
+  }, [editable, editor]);
 
   editor.onEditorContentChange(() => {
     onChange(JSON.stringify(editor.document));
